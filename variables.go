@@ -72,6 +72,12 @@ func ListVariables() {
 
 	// check if slice has any data
 	fmt.Println(len(s), cap(s))
+
+	// 2-D slice
+	two_d_slice := make([][]int, 2)
+	for i := range two_d_slice {
+		two_d_slice[i] = make([]int, 2)
+	}
 }
 
 func Map() {
